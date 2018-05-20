@@ -6,24 +6,16 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.view.ViewCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
-import com.zeafan.azkar_kids.Model.CheckConnection_Internet;
 import com.zeafan.azkar_kids.R;
-//
-//import com.app.mohamedgomaa.kids_pj.Activity_Regition;
-//import com.app.mohamedgomaa.kids_pj.AlwDaa;
-//import com.app.mohamedgomaa.kids_pj.CheckConnection_Internet;
-//import com.app.mohamedgomaa.kids_pj.R;
-//import com.google.android.gms.ads.AdRequest;
-//import com.google.android.gms.ads.AdView;
-//import com.google.android.gms.ads.MobileAds;
-
 public class Activity_Regition_Zakr extends AppCompatActivity {
     ImageView boy,cloud,bed,clothes,door_1,door_2,door_3,pool_water,morgin,foot,car,slaam,deek,musique,azzan,helal,Osoo,Mosab;
     ImageView Azkar_18,Rain,Dunge,door_4,azkar_22,azkar_23,azkar_24;
@@ -39,14 +31,6 @@ public class Activity_Regition_Zakr extends AppCompatActivity {
         ViewCompat.setLayoutDirection(findViewById(R.id.layer_id_relotion_zakr), ViewCompat.LAYOUT_DIRECTION_LTR);
         inintializeUI();
         setAnimation();
-       // MobileAds.initialize(this,getResources().getString(R.string.ADMOB_APP_ID));
-        //AdView mAdView = (AdView)findViewById(R.id.adView_Activity_Anbyaa_Story);
-        if(new CheckConnection_Internet(Activity_Regition_Zakr.this).IsConnection())
-        {
-//            AdRequest adRequest = new AdRequest.Builder().build();
-//            mAdView.loadAd(adRequest);
-        }
-
     }
     void setAnimation()
     {
@@ -264,5 +248,28 @@ boolean check=true;
     public void Action_Azkar_22(View view) {
         Run_Azkar(azkar_22,R.drawable.azkar_22_img,R.drawable.azkar_22_img,R.raw.azkar_22,R.drawable.azkar_22);
 
+    }
+
+    public void Back_Main(View view) {
+        final AlertDialog.Builder alerm_Exit = new AlertDialog.Builder(Activity_Regition_Zakr.this);
+        View view_Saved = getLayoutInflater().inflate(R.layout.dailog_alerm_exit_app, null);
+        Button btn_yes = (Button) view_Saved.findViewById(R.id.id_yse2);
+        Button btn_No = (Button) view_Saved.findViewById(R.id.btn_No2);
+        alerm_Exit.setView(view_Saved);
+        final AlertDialog ad = alerm_Exit.show();
+        btn_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                    finish();
+                    System.exit(0);
+            }
+        });
+        btn_No.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ad.dismiss();
+            }
+        });
     }
 }
