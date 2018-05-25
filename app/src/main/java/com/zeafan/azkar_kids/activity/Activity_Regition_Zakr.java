@@ -27,7 +27,7 @@ public class Activity_Regition_Zakr extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity__regition__zakr);
+        setContentView(R.layout.regition_zakr);
         ViewCompat.setLayoutDirection(findViewById(R.id.layer_id_relotion_zakr), ViewCompat.LAYOUT_DIRECTION_LTR);
         inintializeUI();
         setAnimation();

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_175_250_350_500">500dp</dimen>
+    <dimen name="size_300_400_600_800">800dp</dimen>
+    <dimen name="size_50_100_150_200">200sp</dimen>
+    <dimen name="size_150_200_300_400">400dp</dimen>
+    <dimen name="size_360_480_720_960">960dp</dimen>
+    <dimen name="size_105_140_210_280">280sp</dimen>
+    <dimen name="size_40_60_80_120">120dp</dimen>
+    <dimen name="size_60_80_120_160">160dp</dimen>
+</resources>

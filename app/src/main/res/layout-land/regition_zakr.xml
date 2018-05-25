@@ -26,12 +26,12 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:layout_width="400sp"
+                    android:layout_width="@dimen/size_400_800"
                     android:layout_height="match_parent">
 
                     <ImageView
                         android:id="@+id/imageView13"
-                        android:layout_width="150sp"
+                        android:layout_width="@dimen/size_250_350_500"
                         android:layout_height="200sp"
                         android:layout_alignParentBottom="true"
                         android:layout_toLeftOf="@+id/clothes_t"
@@ -41,7 +41,7 @@
 
                     <ImageView
                         android:id="@+id/clothes_t"
-                        android:layout_width="100sp"
+                        android:layout_width="@dimen/size_50_100_150_200"
                         android:layout_height="150sp"
                         android:layout_centerVertical="true"
                         android:layout_toLeftOf="@+id/imageView15"
@@ -342,36 +342,24 @@
 
     <ImageView
         android:id="@+id/boy_speak_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
+        android:layout_width="@dimen/size_200_400"
+        android:layout_height="@dimen/size_200_400"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <ImageView
         android:id="@+id/cloud_img"
-        android:layout_width="match_parent"
-        android:layout_height="150sp"
-        android:visibility="gone" />
+        android:layout_width="@dimen/size_480_960"
+        android:layout_height="@dimen/size_140_280"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/azkar_3" />
 
     <ImageView
-        android:layout_width="110dp"
-        android:layout_height="85dp"
+        android:layout_width="@dimen/size_60_80_120_160"
+        android:layout_height="@dimen/size_60_80_120_160"
         android:onClick="Back_Main"
         android:src="@drawable/back_btn_action"
         app:layout_constraintLeft_toLeftOf="parent" />
-
-    <!--<com.google.android.gms.ads.AdView-->
-    <!--android:id="@+id/adView_Activity_Anbyaa_Story"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_alignParentBottom="true"-->
-    <!--android:layout_centerHorizontal="true"-->
-    <!--android:layout_marginBottom="0dp"-->
-    <!--app:adSize="BANNER"-->
-    <!--app:adUnitId="@string/banner_ad_unit_id_activity_azkaar"-->
-    <!--app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--app:layout_constraintLeft_toLeftOf="parent"-->
-    <!--app:layout_constraintRight_toRightOf="parent" />-->
 </RelativeLayout>
