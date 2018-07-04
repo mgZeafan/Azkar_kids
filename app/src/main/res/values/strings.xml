@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Azkar</string>
+    <string name="admob_key">ca-app-pub-2377269014702707~8257099878</string>
+    <string name="admob_finish">ca-app-pub-2377269014702707/5895130250</string>
 </resources>
