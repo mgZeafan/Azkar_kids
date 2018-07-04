@@ -369,7 +369,6 @@
         android:layout_height="@dimen/size_105_140_210_280"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/azkar_3"
         android:visibility="gone"
          />
     <ImageView
