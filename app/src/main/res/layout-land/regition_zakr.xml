@@ -26,14 +26,15 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:layout_width="@dimen/size_400_800"
+                    android:layout_width="@dimen/size_300_400_600_800"
                     android:layout_height="match_parent">
 
                     <ImageView
                         android:id="@+id/imageView13"
-                        android:layout_width="@dimen/size_250_350_500"
-                        android:layout_height="200sp"
+                        android:layout_width="@dimen/size_150_175_300_350"
+                        android:layout_height="@dimen/size_150_200_300_400"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/size_15_20_30_40"
                         android:layout_toLeftOf="@+id/clothes_t"
                         android:layout_toStartOf="@+id/clothes_t"
                         android:onClick="Action_bed"
@@ -41,8 +42,8 @@
 
                     <ImageView
                         android:id="@+id/clothes_t"
-                        android:layout_width="@dimen/size_50_100_150_200"
-                        android:layout_height="150sp"
+                        android:layout_width="@dimen/size_95_130_190_260"
+                        android:layout_height="@dimen/size_150_200_300_400"
                         android:layout_centerVertical="true"
                         android:layout_toLeftOf="@+id/imageView15"
                         android:layout_toStartOf="@+id/imageView15"
@@ -51,25 +52,24 @@
 
                     <ImageView
                         android:id="@+id/imageView15"
-                        android:layout_width="60sp"
-                        android:layout_height="250sp"
+                        android:layout_width="@dimen/size_40_60_80_120"
+                        android:layout_height="@dimen/size_170_220_330_440"
+                        android:layout_alignParentBottom="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignTop="@+id/imageView13"
-                        android:layout_marginTop="0dp"
                         android:onClick="Action_door_1"
                         app:srcCompat="@drawable/azkar_room_close" />
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="380dp"
+                    android:layout_width="@dimen/size_285_380_570_760"
                     android:layout_height="match_parent"
                     android:layout_weight="0">
 
                     <ImageView
                         android:id="@+id/door_2"
-                        android:layout_width="50sp"
-                        android:layout_height="200sp"
+                        android:layout_width="@dimen/size_40_60_80_120"
+                        android:layout_height="@dimen/size_175_250_350_500"
                         android:layout_alignParentBottom="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
@@ -78,8 +78,8 @@
 
                     <ImageView
                         android:id="@+id/pool_water"
-                        android:layout_width="80sp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/size_50_100_150_200"
+                        android:layout_height="@dimen/size_150_200_300_400"
                         android:layout_alignTop="@+id/door_2"
                         android:layout_toLeftOf="@+id/door_2"
                         android:layout_toStartOf="@+id/door_2"
@@ -89,156 +89,170 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="580sp"
+                    android:layout_width="@dimen/size_445_590_885_1180"
                     android:layout_height="match_parent"
                     android:layout_weight="0">
 
                     <ImageView
                         android:id="@+id/goodmorgin_azkar"
-                        android:layout_width="130sp"
-                        android:layout_height="130sp"
-                        android:layout_alignParentEnd="true"
+                        android:layout_width="@dimen/size_150_175_300_350"
+                        android:layout_height="@dimen/size_150_175_300_350"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentTop="true"
-                        android:layout_marginEnd="90dp"
-                        android:layout_marginRight="90dp"
+                        android:layout_marginRight="@dimen/size_150_175_300_350"
                         android:onClick="Action_goodMorgin"
                         app:srcCompat="@drawable/room3_azkar" />
 
                     <ImageView
                         android:id="@+id/foot_table"
-                        android:layout_width="150sp"
-                        android:layout_height="180sp"
-                        android:onClick="foot_table"
-                        app:srcCompat="@drawable/foottable"
+                        android:layout_width="@dimen/size_175_250_350_500"
+                        android:layout_height="@dimen/size_105_140_210_280"
+                        android:layout_alignEnd="@+id/goodmorgin_azkar"
                         android:layout_alignParentBottom="true"
-                        android:layout_toLeftOf="@+id/goodmorgin_azkar"
-                        android:layout_toStartOf="@+id/goodmorgin_azkar"
-                        android:layout_marginRight="44dp"
-                        android:layout_marginEnd="44dp" />
+                        android:layout_alignRight="@+id/goodmorgin_azkar"
+                        android:layout_marginBottom="@dimen/size_20_30_45_60"
+                        android:layout_marginEnd="@dimen/size_15_20_30_40"
+                        android:layout_marginRight="@dimen/size_15_20_30_40"
+                        android:onClick="foot_table"
+                        app:srcCompat="@drawable/foottable" />
 
                     <ImageView
                         android:id="@+id/door_3"
-                        android:layout_width="50sp"
-                        android:layout_height="220sp"
+                        android:layout_width="@dimen/size_40_60_80_120"
+                        android:layout_height="@dimen/size_175_250_350_500"
+                        android:layout_alignParentBottom="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
                         android:onClick="Action_door_3"
-                        app:srcCompat="@drawable/azkar_room_close"
-                        android:layout_alignTop="@+id/foot_table" />
+                        app:srcCompat="@drawable/azkar_room_close" />
                 </RelativeLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/azkar_background2"
                 android:orientation="horizontal">
-                <RelativeLayout
-                    android:layout_width="490sp"
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="@dimen/size_400_530_800_1060"
                     android:layout_height="match_parent"
                     android:layout_weight="0">
 
-
-                    <ImageView
-                        android:id="@+id/car"
-                        android:layout_width="250sp"
-                        android:layout_height="110sp"
-                        android:onClick="Action_car"
-                        app:srcCompat="@drawable/car_close"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginBottom="21dp" />
-
                     <ImageView
                         android:id="@+id/imageView22"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/size_50_100_150_200"
+                        android:layout_height="@dimen/size_38_50_75_100"
                         android:layout_above="@+id/musique"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginBottom="26dp"
-                        android:layout_marginEnd="37dp"
-                        android:layout_marginRight="37dp"
+                        android:layout_marginBottom="@dimen/size_6_8_12_16"
+                        android:layout_marginLeft="@dimen/size_6_8_12_16"
+                        android:layout_marginRight="@dimen/size_6_8_12_16"
                         android:onClick="Action_Azaan"
+                        app:layout_constraintBottom_toTopOf="@+id/musique"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:srcCompat="@drawable/azaan" />
 
                     <ImageView
+                        android:id="@+id/car"
+                        android:layout_width="@dimen/size_175_250_350_500"
+                        android:layout_height="@dimen/size_50_100_150_200"
+                        android:layout_marginBottom="@dimen/size_6_8_12_16"
+                        android:layout_marginLeft="0dp"
+                        android:onClick="Action_car"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/car_close" />
+
+                    <ImageView
                         android:id="@+id/musique"
-                        android:layout_width="200sp"
-                        android:layout_height="150sp"
+                        android:layout_width="@dimen/size_175_250_350_500"
+                        android:layout_height="@dimen/size_105_140_210_280"
+                        android:layout_below="@+id/deek"
+                        android:layout_marginBottom="@dimen/size_60_80_120_160"
+                        android:layout_marginEnd="@dimen/size_6_8_12_16"
+                        android:layout_marginStart="@dimen/size_6_8_12_16"
                         android:onClick="Action_Musique"
-                        app:srcCompat="@drawable/musique2"
-                        android:layout_alignBottom="@+id/car"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginBottom="72dp" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.575"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/musique2" />
 
                     <ImageView
                         android:id="@+id/deek"
-                        android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="47dp"
-                        android:layout_marginStart="47dp"
-                        android:onClick="Action_Deek"
-                        app:srcCompat="@drawable/deek2"
-                        android:layout_alignTop="@+id/imageView22"
+                        android:layout_width="@dimen/size_60_80_120_160"
+                        android:layout_height="@dimen/size_60_80_120_160"
                         android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true" />
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/size_6_8_12_16"
+                        android:layout_marginStart="@dimen/size_38_50_75_100"
+                        android:layout_marginLeft="@dimen/size_38_50_75_100"
+                        android:layout_marginTop="@dimen/size_6_8_12_16"
+                        android:onClick="Action_Deek"
+                        app:layout_constraintBottom_toTopOf="@+id/car"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.382"
+                        app:srcCompat="@drawable/deek2" />
 
                     <ImageView
                         android:id="@+id/AlSlaam"
-                        android:layout_width="200sp"
-                        android:layout_height="200sp"
+                        android:layout_width="@dimen/size_105_140_210_280"
+                        android:layout_height="@dimen/size_105_140_210_280"
+                        android:layout_marginBottom="@dimen/size_15_20_30_40"
+                        android:layout_marginRight="@dimen/size_6_8_12_16"
                         android:onClick="Hello"
-                        app:srcCompat="@drawable/hello_2"
-                        android:layout_alignTop="@+id/car"
-                        android:layout_alignLeft="@+id/imageView22"
-                        android:layout_alignStart="@+id/imageView22" />
-                </RelativeLayout>
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/hello_2" />
+                </android.support.constraint.ConstraintLayout>
 
                 <RelativeLayout
-                    android:layout_width="500sp"
+                    android:layout_width="@dimen/size_385_550_775_1100"
                     android:layout_height="match_parent"
                     android:layout_weight="0">
 
 
                     <ImageView
                         android:id="@+id/azkar_15"
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
-                        android:onClick="Helal"
-                        app:srcCompat="@drawable/hilal"
+                        android:layout_width="@dimen/size_50_70_105_140"
+                        android:layout_height="@dimen/size_50_70_105_140"
                         android:layout_alignParentTop="true"
                         android:layout_toLeftOf="@+id/azkar_16"
-                        android:layout_toStartOf="@+id/azkar_16" />
+                        android:layout_toStartOf="@+id/azkar_16"
+                        android:onClick="Helal"
+                        app:srcCompat="@drawable/hilal" />
 
                     <ImageView
                         android:id="@+id/azkar_17"
-                        android:layout_width="180sp"
-                        android:layout_height="150sp"
+                        android:layout_width="@dimen/size_135_180_270_360"
+                        android:layout_height="@dimen/size_110_150_225_300"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="10sp"
+                        android:layout_marginBottom="@dimen/size_7_10_15_20"
                         android:onClick="Mosab"
                         app:srcCompat="@drawable/azkar_17_img" />
 
                     <ImageView
                         android:id="@+id/azkar_16"
-                        android:layout_width="150sp"
-                        android:layout_height="130sp"
+                        android:layout_width="@dimen/size_110_150_225_300"
+                        android:layout_height="@dimen/size_95_130_190_260"
                         android:layout_alignParentBottom="true"
                         android:layout_alignParentRight="true"
                         android:onClick="Oooos"
                         app:srcCompat="@drawable/azkar_boy_16_" />
                 </RelativeLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/azkar_background3"
                 android:orientation="horizontal">
+
                 <RelativeLayout
-                    android:layout_width="450sp"
+                    android:layout_width="@dimen/size_375_500_750_1000"
                     android:layout_height="match_parent"
                     android:layout_weight="0">
 
@@ -251,111 +265,112 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="400sp"
+                    android:layout_width="@dimen/size_330_440_660_880"
                     android:layout_height="match_parent"
                     android:layout_weight="0">
 
                     <ImageView
                         android:id="@+id/azkar_20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/size_175_250_350_500"
+                        android:layout_height="@dimen/size_150_200_300_400"
                         android:layout_alignParentBottom="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_marginEnd="35dp"
-                        android:layout_marginRight="35dp"
+                        android:layout_marginRight="@dimen/size_40_60_80_120"
                         android:onClick="Action_Azkaar_20"
                         app:srcCompat="@drawable/azkar_20_img" />
 
                     <ImageView
                         android:id="@+id/azkar_19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/size_175_250_350_500"
+                        android:layout_height="@dimen/size_50_100_150_200"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
                         android:onClick="Action_Azkaar_19"
                         app:srcCompat="@drawable/azkar_19_rain" />
                 </RelativeLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/azkar_background4"
                 android:orientation="horizontal">
+
                 <RelativeLayout
-                    android:layout_width="490sp"
+                    android:layout_width="@dimen/size_400_530_800_1060"
                     android:layout_height="match_parent"
                     android:layout_weight="0">
 
                     <ImageView
                         android:id="@+id/azkar_22"
-                        android:layout_width="240sp"
-                        android:layout_height="250sp"
-                        android:layout_weight="1"
-                        android:onClick="Action_Azkar_22"
-                        app:srcCompat="@drawable/azkar_22_img"
+                        android:layout_width="@dimen/size_175_250_350_500"
+                        android:layout_height="@dimen/size_175_250_350_500"
+                        android:layout_alignEnd="@+id/azkar_23"
                         android:layout_alignParentBottom="true"
                         android:layout_alignRight="@+id/azkar_23"
-                        android:layout_alignEnd="@+id/azkar_23"
-                        android:layout_marginRight="73dp"
-                        android:layout_marginEnd="73dp" />
+                        android:layout_marginEnd="@dimen/size_60_80_120_160"
+                        android:layout_marginRight="@dimen/size_60_80_120_160"
+                        android:onClick="Action_Azkar_22"
+                        app:srcCompat="@drawable/azkar_22_img" />
 
                     <ImageView
                         android:id="@+id/azkar_21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="200sp"
-                        android:onClick="Action_Azkar21"
-                        app:srcCompat="@drawable/azkar_room_close2"
+                        android:layout_width="@dimen/size_40_60_80_120"
+                        android:layout_height="@dimen/size_175_250_350_500"
                         android:layout_alignParentBottom="true"
                         android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true" />
+                        android:layout_alignParentStart="true"
+                        android:onClick="Action_Azkar21"
+                        app:srcCompat="@drawable/azkar_room_close2" />
 
                     <ImageView
                         android:id="@+id/azkar_23"
-                        android:layout_width="150sp"
-                        android:layout_height="110sp"
-                        android:onClick="Action_Azkar_23"
-                        app:srcCompat="@drawable/room3_azkar"
-                        android:layout_alignParentTop="true"
+                        android:layout_width="@dimen/size_110_150_225_300"
+                        android:layout_height="@dimen/size_50_100_150_200"
+                        android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_alignParentTop="true"
+                        android:onClick="Action_Azkar_23"
+                        app:srcCompat="@drawable/room3_azkar" />
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="310sp"
+                    android:layout_width="@dimen/size_300_400_600_800"
                     android:layout_height="match_parent"
                     android:layout_weight="0">
 
                     <ImageView
                         android:id="@+id/azkar_24"
-                        android:layout_width="180sp"
-                        android:layout_height="250sp"
-                        android:onClick="Action_Azkar_24"
-                        app:srcCompat="@drawable/bed"
+                        android:layout_width="@dimen/size_110_150_225_300"
+                        android:layout_height="@dimen/size_175_250_350_500"
                         android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_marginEnd="@dimen/size_50_70_105_140"
+                        android:layout_marginRight="@dimen/size_50_70_105_140"
+                        android:onClick="Action_Azkar_24"
+                        app:srcCompat="@drawable/bed" />
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
-
     <ImageView
         android:id="@+id/boy_speak_id"
-        android:layout_width="@dimen/size_200_400"
-        android:layout_height="@dimen/size_200_400"
+        android:layout_width="@dimen/size_150_200_300_400"
+        android:layout_height="@dimen/size_150_200_300_400"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:visibility="gone"
         android:layout_alignParentStart="true" />
-
     <ImageView
         android:id="@+id/cloud_img"
-        android:layout_width="@dimen/size_480_960"
-        android:layout_height="@dimen/size_140_280"
+        android:layout_width="@dimen/size_300_400_600_800"
+        android:layout_height="@dimen/size_105_140_210_280"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/azkar_3" />
-
+        android:visibility="gone"
+         />
     <ImageView
         android:layout_width="@dimen/size_60_80_120_160"
         android:layout_height="@dimen/size_60_80_120_160"

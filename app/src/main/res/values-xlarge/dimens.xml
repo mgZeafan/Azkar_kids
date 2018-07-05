@@ -8,4 +8,21 @@
     <dimen name="size_105_140_210_280">280sp</dimen>
     <dimen name="size_40_60_80_120">120dp</dimen>
     <dimen name="size_60_80_120_160">160dp</dimen>
+    <dimen name="size_150_175_300_350">350dp</dimen>
+    <dimen name="size_95_130_190_260">260dp</dimen>
+    <dimen name="size_20_30_45_60">30dp</dimen>
+    <dimen name="size_15_20_30_40">40dp</dimen>
+    <dimen name="size_170_220_330_440">440dp</dimen>
+    <dimen name="size_445_590_885_1180">1180dp</dimen>
+    <dimen name="size_38_50_75_100">100dp</dimen>
+    <dimen name="size_400_530_800_1060">1060dp</dimen>
+    <dimen name="size_6_8_12_16">16dp</dimen>
+    <dimen name="size_50_70_105_140">140dp</dimen>
+    <dimen name="size_135_180_270_360">360dp</dimen>
+    <dimen name="size_110_150_225_300">300dp</dimen>
+    <dimen name="size_7_10_15_20">20dp</dimen>
+    <dimen name="size_375_500_750_1000">1000dp</dimen>
+    <dimen name="size_330_440_660_880">880dp</dimen>
+    <dimen name="size_285_380_570_760">760dp</dimen>
+    <dimen name="size_385_550_775_1100">1100dp</dimen>
 </resources>

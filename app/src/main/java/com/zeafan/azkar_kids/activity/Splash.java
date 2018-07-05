@@ -1,4 +1,4 @@
-package com.zeafan.azkar_kids.activity;
+package com.zeafan.azkar_kids_2.activity;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -11,7 +11,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.zeafan.azkar_kids.R;
+import com.zeafan.azkar_kids_2.R;
 
 public class Splash extends AppCompatActivity {
 Animation animationTitle;

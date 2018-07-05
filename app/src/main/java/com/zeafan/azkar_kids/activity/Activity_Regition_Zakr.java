@@ -1,4 +1,4 @@
-package com.zeafan.azkar_kids.activity;
+package com.zeafan.azkar_kids_2.activity;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
@@ -15,11 +15,17 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-import com.zeafan.azkar_kids.R;
+
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+import com.zeafan.azkar_kids_2.R;
 public class Activity_Regition_Zakr extends AppCompatActivity {
     ImageView boy,cloud,bed,clothes,door_1,door_2,door_3,pool_water,morgin,foot,car,slaam,deek,musique,azzan,helal,Osoo,Mosab;
     ImageView Azkar_18,Rain,Dunge,door_4,azkar_22,azkar_23,azkar_24;
     Animation anim_alpha;
+    InterstitialAd mInterstitialAd;
     MediaPlayer mediaPlayer;
     AnimationDrawable anim_draw;
     @Override
@@ -31,6 +37,22 @@ public class Activity_Regition_Zakr extends AppCompatActivity {
         ViewCompat.setLayoutDirection(findViewById(R.id.layer_id_relotion_zakr), ViewCompat.LAYOUT_DIRECTION_LTR);
         inintializeUI();
         setAnimation();
+        if (new CheckConnnection(this).IsConnection()) {
+            MobileAds.initialize(getApplicationContext(), getResources().getString(R.string.admob_key));
+            AdRequest adRequest_inter = new AdRequest.Builder().build();
+            mInterstitialAd = new InterstitialAd(Activity_Regition_Zakr.this);
+            mInterstitialAd.setAdUnitId(getResources().getString(R.string.admob_finish));
+            mInterstitialAd.loadAd(adRequest_inter);
+            mInterstitialAd.setAdListener(new AdListener() {
+                @Override
+                public void onAdClosed() {
+                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                    intent.addCategory(Intent.CATEGORY_HOME);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                }
+            });
+        }
     }
     void setAnimation()
     {
@@ -260,9 +282,12 @@ boolean check=true;
         btn_yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (mInterstitialAd!=null&&mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }else {
                     finish();
                     System.exit(0);
+                }
             }
         });
         btn_No.setOnClickListener(new View.OnClickListener() {

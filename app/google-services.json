@@ -33,9 +33,17 @@
         {
           "client_id": "630720103667-0aklek978evrn81ucl7a080s708vqq8b.apps.googleusercontent.com",
           "client_type": 3
+        },
+        {
+          "client_id": "630720103667-0aklek978evrn81ucl7a080s708vqq8b.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
-      "api_key": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATUOwpjFYYPbNsB62G8azuzoXWHrq4gwI"
+        }
+      ],
       "services": {
         "analytics_service": {
           "status": 1
@@ -81,9 +89,17 @@
         {
           "client_id": "630720103667-0aklek978evrn81ucl7a080s708vqq8b.apps.googleusercontent.com",
           "client_type": 3
+        },
+        {
+          "client_id": "630720103667-0aklek978evrn81ucl7a080s708vqq8b.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
-      "api_key": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATUOwpjFYYPbNsB62G8azuzoXWHrq4gwI"
+        }
+      ],
       "services": {
         "analytics_service": {
           "status": 1
@@ -121,9 +137,17 @@
         {
           "client_id": "630720103667-0aklek978evrn81ucl7a080s708vqq8b.apps.googleusercontent.com",
           "client_type": 3
+        },
+        {
+          "client_id": "630720103667-0aklek978evrn81ucl7a080s708vqq8b.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
-      "api_key": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATUOwpjFYYPbNsB62G8azuzoXWHrq4gwI"
+        }
+      ],
       "services": {
         "analytics_service": {
           "status": 1
