@@ -1,4 +1,4 @@
-package com.zeafan.azkar_kids_2.activity;
+package com.zeafan.azkar_kids.activity;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
