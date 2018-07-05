@@ -20,7 +20,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
-import com.zeafan.azkar_kids_2.R;
+import com.zeafan.azkar_kids.R;
 public class Activity_Regition_Zakr extends AppCompatActivity {
     ImageView boy,cloud,bed,clothes,door_1,door_2,door_3,pool_water,morgin,foot,car,slaam,deek,musique,azzan,helal,Osoo,Mosab;
     ImageView Azkar_18,Rain,Dunge,door_4,azkar_22,azkar_23,azkar_24;

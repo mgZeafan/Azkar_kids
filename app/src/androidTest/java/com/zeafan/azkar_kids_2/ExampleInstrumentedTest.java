@@ -1,4 +1,4 @@
-package com.zeafan.azkar_kids_2;
+package com.zeafan.azkar_kids;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.zeafan.azkar_kids_2", appContext.getPackageName());
+        assertEquals("com.zeafan.azkar_kids", appContext.getPackageName());
     }
 }

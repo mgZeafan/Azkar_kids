@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_splash2"
-    tools:context="com.zeafan.azkar_kids_2.activity.Splash">
+    tools:context="com.zeafan.azkar_kids.activity.Splash">
 
     <ImageView
         android:id="@+id/title"
