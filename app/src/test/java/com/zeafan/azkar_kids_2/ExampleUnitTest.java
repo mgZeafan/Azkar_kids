@@ -1,4 +1,4 @@
-package com.zeafan.azkar_kids;
+package com.zeafan.azkar_kids_2;
 
 import org.junit.Test;
 
